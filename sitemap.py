@@ -128,7 +128,6 @@ def build_url_element(entry):
 
 def generate_sitemap_xml(products, collections, static_pages):
     ET.register_namespace("", SITEMAP_NS)
-    ET.register_namespace("image", IMAGE_NS)
     urlset = ET.Element("urlset", {
         "xmlns": SITEMAP_NS,
         "xmlns:image": IMAGE_NS
