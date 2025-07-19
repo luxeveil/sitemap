@@ -138,6 +138,7 @@ def generate_sitemap_xml(products, collections, static_pages):
         urlset.append(build_url_element(entry))
 
     rough_string = ET.tostring(urlset, "utf-8")
+    print(rough_string)
     reparsed = minidom.parseString(rough_string)
     return reparsed.toprettyxml(indent="  ")
 
