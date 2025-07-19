@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment folders
+.venv/
+env/
+venv/
+
+# VSCode settings (optional)
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# GitHub Pages build cache (optional)
+_site/
+
+# Logs and local cache
+*.log
+
+# Sitemap output (optional if it's always committed)
+# Uncomment if you don't want to track the output locally:
+# sitemap.xml
