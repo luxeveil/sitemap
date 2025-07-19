@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<urlset xmlns:ns0="http://www.google.com/schemas/sitemap-image/1.1" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://theluxeveil.com/</loc>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://yourstore.com/collections/t-shirts</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://yourstore.com/contact</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://theluxeveil.com/collections/frontpage</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://theluxeveil.com/products/unisex-oversized-classic-t-shirt</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <ns0:image>
+      <ns0:loc>https://cdn.shopify.com/s/files/1/0767/0149/9607/files/Front_1_c_1.jpg?v=1751792852</ns0:loc>
+      <ns0:title>Front_1_c_1.jpg</ns0:title>
+    </ns0:image>
+    <ns0:image>
+      <ns0:loc>https://cdn.shopify.com/s/files/1/0767/0149/9607/files/Back_2_c_1.jpg?v=1751792852</ns0:loc>
+      <ns0:title>Back_2_c_1.jpg</ns0:title>
+    </ns0:image>
+  </url>
+</urlset>
