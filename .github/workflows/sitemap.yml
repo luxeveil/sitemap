@@ -31,8 +31,9 @@ jobs:
 
       - name: Commit and push sitemap.xml
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "info@theluxeveil.com"
-          git add sitemap.xml
-          git commit -m "Update sitemap $(date '+%Y-%m-%d')" || echo "No changes"
-          git push https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/luxeveil/sitemap.git HEAD:main
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "info@theluxeveill.com"
+          git remote set-url origin https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/luxeveil/sitemap.git
+          git add .
+          git commit -m "Update sitemap"
+          git push origin HEAD:main
