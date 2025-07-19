@@ -35,4 +35,4 @@ jobs:
           git config user.email "info@theluxeveil.com"
           git add sitemap.xml
           git commit -m "Update sitemap $(date '+%Y-%m-%d')" || echo "No changes"
-          git push
+          git push https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/luxeveil/sitemap.git HEAD:main
