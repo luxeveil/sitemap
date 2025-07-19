@@ -1,0 +1,17 @@
+[
+  {
+    "loc": "https://theluxeveil.com/",
+    "priority": 1.0,
+    "changefreq": "daily"
+  },
+  {
+    "loc": "https://yourstore.com/collections/t-shirts",
+    "priority": 0.9,
+    "changefreq": "weekly"
+  },
+  {
+    "loc": "https://yourstore.com/contact",
+    "priority": 0.3,
+    "changefreq": "yearly"
+  }
+]
