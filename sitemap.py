@@ -2,6 +2,7 @@ import requests
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 import os
+from datetime import datetime
 
 SHOPIFY_DOMAIN = "theluxeveil.com"
 STOREFRONT_TOKEN = os.getenv("STOREFRONT_TOKEN")
@@ -148,6 +149,17 @@ def write_sitemap_file(xml_content, filename="sitemap.xml"):
     print(f"Sitemap written to {filename}")
 
 
+def update_readme():
+    # Get the current timestamp in DD-mm-YYYY HH:MM:SS format
+    current_time = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+    
+    # Read the README.md file
+    readme_path = "README.md"
+    with open(readme_path, "a", encoding="utf-8") as readme_file:
+        readme_file.write(f"\nLast Successful Run: {current_time}\n")
+    print(f"README.md updated with last successful run: {current_time}")
+
+
 def main():
     print("Fetching static URLs...")
     static_urls = fetch_static_urls()
@@ -163,6 +175,9 @@ def main():
 
     print("Writing sitemap.xml...")
     write_sitemap_file(sitemap_xml)
+
+    # Update the README.md file with the last successful run timestamp
+    update_readme()
 
 
 if __name__ == "__main__":
